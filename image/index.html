@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productiviy DashBoard</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <nav>
+        <div class="navbox">
+          <h2>📓📓 Productivity DashBoard</h2>
+          <h2>Date :<span class="date"></span></h2>
+          <h2>Day : <span class="day"></span></h2>
+          <h2>Time : <span class="time"></span></h2>
+          <select name="theam" id="theamset">
+            <option value="theam">Theam</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">purple</option>
+            <option value="pink">Pink</option>
+            <option value="brown">Brown</option>
+            <option value="teal">Teal</option>
+            <option value="dark">Dark</option>
+            <option value="coral">Coral</option>
+            <option value="mint">Mint</option>
+            <option value="navy">navy</option>
+            <option value="gray">Gray</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+          </select>
+        </div>
+      </nav>
+      <section class="allelem">
+        <header>
+          <div>
+            <h1><span class="country"></span>⛳</h1>
+            <h2>City : <span class="city"></span></h2>
+            <h1><span class="temp"></span>°C</h1>
+          </div>
+          <div>
+            <br />
+            <h4>pressure : <span class="pressure"></span></h4>
+            <h4>humidity : <span class="humidity"></span>%</h4>
+            <h4>speed :<span class="wind"></span>Km/h</h4>
+            <h4>clouds : <span class="cloud"></span>☁︎</h4>
+          </div>
+        </header>
+        <div class="boxes todo" id="0">
+          <img src="./image/todo.jpeg" alt="Todo image" />
+        </div>
+        <div class="boxes daily" id="1">
+          <img src="./image/dailyplan.jpeg" alt="Daily Plain image " />
+        </div>
+        <div class="boxes motivation" id="2">
+          <img src="./image/motivation.jpeg" alt="Motivation image" />
+        </div>
+        <div class="boxes pomodoro" id="3">
+          <img src="./image/timer.jpeg" alt="Timer image" />
+        </div>
+      </section>
+      <section class="infobox" id="todopage">
+        <button class="back commonbtn" id="0">
+          <i class="ri-arrow-left-line"></i>Back
+        </button>
+        <h2 class="yourtodo">Your todo 😀</h2>
+        <div class="todoelem">
+          <div class="todoinfo common">
+            <form class="form" action="">
+              <input
+                type="text"
+                id="todoinputbox"
+                class="textcommon"
+                placeholder="Enter Your Task"
+              />
+              <textarea
+                name="textarea"
+                class="textcommon"
+                id="textarea"
+                placeholder="Your Message"
+              ></textarea>
+              <label for="checkbox">
+                <input
+                  type="checkbox"
+                  name="chekbox"
+                  id="checkbox"
+                  class="checkbox"
+                />
+                Make as important!
+              </label>
+              <button class="textcommon" id="addtaskbtn">Add Task</button>
+            </form>
+          </div>
+          <div class="alltodo common" id="alltodo"></div>
+        </div>
+      </section>
+      <section class="infobox" id="dailypage">
+        <button class="clear commonbtn">Clear</button>
+        <button class="back commonbtn" id="1">
+          <i class="ri-arrow-left-line"></i>Back
+        </button>
+        <h2 class="daiy pliner">
+          📝📝📝📝Plain your day to be more productive <span class="day"></span>
+        </h2>
+        <div class="dailyplanebox"></div>
+      </section>
+      <section class="infobox" id="motivationpage">
+        <button class="back commonbtn" id="2">
+          <i class="ri-arrow-left-line"></i>Back
+        </button>
+        <h2>🖋🖋 Quote of the <span class="day"></span>🖋🖋</h2>
+        <div class="wraper commonboxescls">
+          <div class="first commonboxescls">
+            <div class="sec commonboxescls">
+              <div class="third commonboxescls">
+                <h1 class="thought"></h1>
+                <h4 class="author"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="infobox" id="timepage">
+        <button class="back commonbtn" id="3">
+          <i class="ri-arrow-left-line"></i>Back
+        </button>
+        <h2>⏱⏱ Your Time ⏱⏱</h2>
+        <div class="timer commontimerbox">
+          <div class="firsttimer commontimerbox">
+            <div class="secondtimer commontimerbox">
+              <div class="thirdtimer commontimerbox">
+                <h1 class="timerh1"></h1>
+                <div class="btn">
+                  <button class="timerbtn commonbtn" id="startbtn">
+                    Start
+                  </button>
+                  <button class="timerbtn commonbtn" id="pausebtn">
+                    pause
+                  </button>
+                  <button class="timerbtn commonbtn" id="resetbtn">
+                    Reset
+                  </button>
+                  <button class="timerbtn commonbtn" id="breakbtn">
+                    Break
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="infobox" id="dailygoalpage">
+        <button class="back commonbtn" id="4">
+          <i class="ri-arrow-left-line"></i>Back</button
+        >g
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

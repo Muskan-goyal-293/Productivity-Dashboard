@@ -1,0 +1,416 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--four);
+  font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --first: #F4EEFF;
+  --sec: #DCD6F7;
+  --third: #A6B1E1;
+  --four: #424874;
+}
+
+::-webkit-scrollbar{
+  background-color:var(--sec);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--four);
+  border-radius: 1rem;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-transform: capitalize;
+}
+nav {
+  height: 3rem;
+  width: 100%;
+  background-color: var(--third);
+  position: fixed;
+  top: 0;
+ z-index: 4;
+}
+.allelem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top:4rem;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.allelem .boxes {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  -o-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.allelem .boxes:hover {
+  -webkit-transform: scale(0.92);
+      -ms-transform: scale(0.92);
+          transform: scale(0.92);
+  -webkit-box-shadow: 0px 0px 1rem var(--third),
+  0 0px 1rem var(--first);
+          box-shadow: 0px 0px 1rem var(--third),
+  0 0px 1rem var(--first);
+
+}
+.allelem .boxes img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infobox{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--four);
+  display: none;
+  position: fixed;
+  top:0; 
+  padding: 4rem;
+  color: var(--first);
+}
+.commonbtn{
+font-size: 1rem;
+  color: var(--first);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: var(--third);
+  border: none;
+  -webkit-transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  -o-transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  cursor: pointer; 
+}
+.back{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap:0.3rem;
+    position: absolute ;
+  right: 5%;  
+}
+.commonbtn:hover{
+  -webkit-box-shadow: 0px 0px 0.3rem var(--sec);
+          box-shadow: 0px 0px 0.3rem var(--sec);
+}
+.clear{
+    position: absolute ;
+  right: 13%;
+}
+
+.todoelem{
+  background-color: var(--third);
+  height: 100%;
+  width: 100%;
+  margin-top: 1rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+padding: 1.5rem;
+border-radius: 1.5rem;
+}
+.common{
+height: 100%;
+background-color: var(--four);
+border-radius: 1rem;
+}
+.todoinfo{
+height: 100%;
+  width: 30%;
+padding: 0.5rem;
+}
+.alltodo{
+  width: 68%;
+  padding: 0.5rem;
+overflow: auto;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+.textcommon{
+width: 100%;
+padding: 0.5rem;
+background-color: var(--third);
+border: none;
+margin-bottom: 1rem;
+border-radius: 0.5rem;
+outline-color: var(--sec);
+color: var(--four);
+}
+#textarea{
+  height: 10rem;
+}
+#addtaskbtn{
+color: var(--first);
+font-weight: 700;
+font-size: 1.3rem;
+cursor: pointer;
+-webkit-transition: all linear 0.3s;
+-o-transition: all linear 0.3s;
+transition: all linear 0.3s;
+}
+#addtaskbtn:hover{
+  -webkit-box-shadow: 0px 0px 0.3rem var(--first);
+          box-shadow: 0px 0px 0.3rem var(--first);
+  scale: 0.9;
+}
+.todolistshowbox{
+height: 3rem;
+width: 100%;
+padding: 0.5rem;
+background-color: var(--third);
+margin-bottom: 1rem;
+border-radius: 0.5rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.taskdone{
+  height: 100%;
+  width: 7rem;
+  background-color: var(--four);
+  border: none;
+  color: var(--first);
+  border-radius: 0.5rem;
+}
+.taskdone:hover{
+  -webkit-box-shadow: 0px 0px 0.5rem var(--first) ;
+          box-shadow: 0px 0px 0.5rem var(--first) ;
+  scale: 0.95;
+}
+.taskaddh2{
+  text-transform: capitalize;
+  width: 75%;
+  white-space: nowrap;
+overflow: auto;
+scroll-behavior: smooth;
+scrollbar-width: none;
+}
+
+#span{
+font-size: 0.7rem;
+background-color:var(--four);
+padding: 0.2rem;
+border-radius: 10%;
+}
+.taskaddh2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap:0.3rem;
+}
+.taskaddh2 span.true{
+  opacity: 1;
+} 
+.taskaddh2 span.false{
+  opacity: 0;
+} 
+
+.checkbox{
+  margin-bottom: 0.5rem; 
+}
+
+.dailyplanebox{
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+  background-color: var(--third);
+  margin-top: 1%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap:0.5rem;
+  scrollbar-width: none;
+}
+.dailyplinerchildbox{
+  background-color: var(--four);
+  width:  49%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+position: relative;
+padding: 0.5rem;
+border-radius: 0.5rem;
+}
+.plaindayinput{
+width: 100%;
+height: 100%;
+background-color: var(--four);
+border: none;
+outline:none;
+color: var(--sec);
+}
+.commonboxescls{
+ height: 100%;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+ 
+}
+.wraper{
+  background-color: var(--third);
+  margin-top: 1.5rem;
+}
+.first{
+background-color: var(--four);
+}
+.sec{
+  background-color: var(--third);
+}
+.third{
+  background-color: var(--four);
+-webkit-transition: all linear 1s;
+-o-transition: all linear 1s;
+transition: all linear 1s;
+position: relative;
+}
+.third:hover{
+  -webkit-box-shadow:  0px 0px 2rem var(--sec) , 0px 0px 2rem var(--first) ,0px 0px 2rem var(--sec);
+          box-shadow:  0px 0px 2rem var(--sec) , 0px 0px 2rem var(--first) ,0px 0px 2rem var(--sec);
+}
+.author{
+position: absolute;
+bottom: 5%;
+right: 5%;
+}
+.commontimerbox{
+
+  height: 100%;
+  width: 100%;
+padding: 1rem;
+border-radius: 1rem;
+}
+.timer{
+  margin-top: 1rem;
+  background-color: var(--third);
+}
+.firsttimer{
+  background-color: var(--four);
+}
+.secondtimer{
+  background-color: var(--third);
+}
+.thirdtimer{
+  background-color: var(--four);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap:1rem
+}
+.timerh1{
+  font-size: 4rem;
+}
+.timerbtn{
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+.navbox{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex ;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+padding: 0.5rem 2rem;
+}
+#theamset{
+  background-color: var(--four);
+  color: var(--sec);
+  border: none;
+  outline: none;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+-webkit-box-shadow: 0px 0px 1rem var(--sec);
+        box-shadow: 0px 0px 1rem var(--sec);
+}
+header{
+  height: 10rem;
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+ border-radius: 1rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+padding:1rem 5rem ;
+}
+
